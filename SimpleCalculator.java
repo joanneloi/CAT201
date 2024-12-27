@@ -7,7 +7,7 @@ public class SimpleCalculator {
         // Greeting the user
         System.out.println("Welcome to the Simple Calculator!");
         
-        // Taking input from the user
+        // Taking input from the user//
         System.out.print("Enter the first number: ");
         double num1 = scanner.nextDouble();
 
