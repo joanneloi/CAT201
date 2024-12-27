@@ -5,6 +5,7 @@ public class SimpleCalculator {
         Scanner scanner = new Scanner(System.in);
 
         // Greeting the user
+        // 
         System.out.println("Welcome to the Simple Calculator!");
         
         // Taking input from the user
