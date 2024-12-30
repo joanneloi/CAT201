@@ -10,7 +10,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
@@ -46,8 +46,9 @@
 </header>
 
 <section class="display-orders">
+   <!-- if cart is nothing, it will show... -->
    <p class="empty">Your cart is empty!</p>
-   <!-- display total  -->
+   <!-- if cart have item, it will calculate the total and display total...  -->
    <div class="grand-total">grand total : <span>RM0/-</span></div> 
 </section>
 
@@ -78,7 +79,7 @@
          </div>
          <div class="inputBox">
             <span>address line 01 :</span>
-            <input type="text" name="flat" placeholder="e.g. flat number" class="box" required>
+            <input type="text" name="flat" placeholder="e.g. house number" class="box" required>
          </div>
          <div class="inputBox">
             <span>address line 02 :</span>
@@ -86,18 +87,18 @@
          </div>
          <div class="inputBox">
             <span>city :</span>
-            <input type="text" name="city" placeholder="e.g. temerloh" class="box" required>
+            <input type="text" name="city" placeholder="e.g. Temerloh" class="box" required>
          </div>
          <div class="inputBox">
             <span>state :</span>
-            <input type="text" name="state" placeholder="e.g. pahang" class="box" required>
+            <input type="text" name="state" placeholder="e.g. Pahang" class="box" required>
          </div>
          <div class="inputBox">
             <span>country :</span>
             <input type="text" name="country" placeholder="e.g. Malaysia" class="box" required>
          </div>
          <div class="inputBox">
-            <span>pin code :</span>
+            <span>postcode :</span>
             <input type="number" min="0" name="pin_code" placeholder="e.g. 123456" class="box" required>
          </div>
       </div>
@@ -139,7 +140,7 @@
     <p class="credit"> &copy; CAT201 Project 2024 by <span>Team YumYum</span> | Jom Makan </p>
  </footer>
 
-<script src="js/script.js"></script>
+ <script src="../js/script.js"></script>
 
 </body>
 </html>

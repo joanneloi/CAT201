@@ -10,7 +10,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/components.css">
+   <link rel="stylesheet" href="../css/components.css">
 
 </head>
 <body>
@@ -30,7 +30,7 @@
             <div id="user-btn" class="fas fa-user"></div>
          </div>
          <div class="profile">
-            <img src="uploaded_img/default.png" alt="">
+            <img src="../uploaded_img/default.png" alt="">
             <p>Admin</p>
             <a href="admin_update_profile.html" class="btn">update profile</a>
             <a href="login.html" class="delete-btn">logout</a>
@@ -42,28 +42,33 @@
       </div>
    </header>
 
+   <!-- ADMIN CAN UPDATE THEIR PROFILE -->
 <section class="update-profile">
-
    <h1 class="title">update profile</h1>
-
    <form action="" method="POST" enctype="multipart/form-data">
-      <img src="uploaded_img/default_image.jpg" alt="">
+      <img src="../uploaded_img/default_image.jpg" alt="">
       <div class="flex">
          <div class="inputBox">
+            <!-- UPDATE NEW USERNAME -->
             <span>username :</span>
             <input type="text" name="name" placeholder="update username" required class="box" value="Admin">
+            <!-- UPDATE NEW LOGIN EMAIL -->
             <span>email :</span>
             <input type="email" name="email" placeholder="update email" required class="box" value="admin@example.com">
+            <!-- UPLOAD NEW PROFILE PICTURE -->
             <span>update pic :</span>
             <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="box">
             <input type="hidden" name="old_image" value="default_image.jpg">
          </div>
          <div class="inputBox">
+            <!-- TO CHANGE NEW PASSWORD NEED TO VERIFY OLD PASSWORD FIRST -->
             <input type="hidden" name="old_pass" value="">
             <span>old password :</span>
+            <!-- UPDATE NEW PASSWORD TO CHANGE -->
             <input type="password" name="update_pass" placeholder="enter previous password" class="box">
             <span>new password :</span>
             <input type="password" name="new_pass" placeholder="enter new password" class="box">
+            <!-- CONFIRM NEW PASSWORD -->
             <span>confirm password :</span>
             <input type="password" name="confirm_pass" placeholder="confirm new password" class="box">
          </div>
@@ -88,16 +93,16 @@
       </div>
       <div class="box">
          <h3>contact info</h3>
-         <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+         <p> <i class="fas fa-phone"></i> +03-111-2222 </p>
          <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
-         <p> <i class="fas fa-envelope"></i> adminpanel@gmail.com </p>
-         <p> <i class="fas fa-map-marker-alt"></i> Kuala Lumpur, Malaysia - 50000 </p>
+         <p> <i class="fas fa-envelope"></i> adminpanel_jommakan@gmail.com </p>
+         <p> <i class="fas fa-map-marker-alt"></i> Penang, Malaysia - 50000 </p>
       </div>
    </section>
-   <p class="credit"> &copy; Admin Panel 2024 | <span>Jom Makan Team</span> </p>
+   <p class="credit"> &copy; Admin Panel 2024 | Team YumYum <span>Jom Makan </span> </p>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 </html>

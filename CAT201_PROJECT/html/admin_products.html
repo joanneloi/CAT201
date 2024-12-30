@@ -10,7 +10,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/admin_style.css">
+   <link rel="stylesheet" href="../css/admin_style.css">
 
 </head>
 <body>
@@ -30,7 +30,7 @@
          <div id="user-btn" class="fas fa-user"></div>
       </div>
       <div class="profile">
-         <img src="uploaded_img/default.png" alt="">
+         <img src="../uploaded_img/default.png" alt="">
          <p>Admin</p>
          <a href="admin_update_profile.html" class="btn">update profile</a>
          <a href="login.html" class="delete-btn">logout</a>
@@ -42,16 +42,16 @@
    </div>
 </header>
 
+   <!-- ADMIN CAN ADD NEW PRODUCT -->
 <section class="add-products">
-
    <h1 class="title">add new product</h1>
-
    <form action="" method="POST" enctype="multipart/form-data">
       <div class="flex">
          <div class="inputBox">
          <input type="text" name="name" class="box" required placeholder="enter product name">
          <select name="category" class="box" required>
             <option value="" selected disabled>select category</option>
+               <!-- select the category for new item -->
                <option value="nutty">Sweet and Nutty</option>
                <option value="spices">spices</option>
                <option value="spicy">Hot and Spicy</option>
@@ -59,26 +59,25 @@
          </select>
          </div>
          <div class="inputBox">
+         <!-- upload the name, price, image for the item -->
          <input type="number" min="0" name="price" class="box" required placeholder="enter product price">
          <input type="file" name="image" required class="box" accept="image/jpg, image/jpeg, image/png">
          </div>
       </div>
+      <!-- upload the product details -->
       <textarea name="details" class="box" required placeholder="enter product details" cols="30" rows="10"></textarea>
       <input type="submit" class="btn" value="add product" name="add_product">
    </form>
 
 </section>
 
+ <!-- if product successful added, it will show... -->
 <section class="show-products">
-
    <h1 class="title">products added</h1>
-
    <div class="box-container">
-
+      <!-- if new product failed to add... -->
       <p class="empty">no products added yet!</p>
-
    </div>
-
 </section>
 
 <footer class="footer">
@@ -93,16 +92,17 @@
       </div>
       <div class="box">
          <h3>contact info</h3>
-         <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+         <p> <i class="fas fa-phone"></i> +03-111-2222 </p>
          <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
-         <p> <i class="fas fa-envelope"></i> adminpanel@gmail.com </p>
-         <p> <i class="fas fa-map-marker-alt"></i> Kuala Lumpur, Malaysia - 50000 </p>
+         <p> <i class="fas fa-envelope"></i> adminpanel_jommakan@gmail.com </p>
+         <p> <i class="fas fa-map-marker-alt"></i> Penang, Malaysia - 50000 </p>
       </div>
    </section>
-   <p class="credit"> &copy; Admin Panel 2024 | <span>Jom Makan Team</span> </p>
+   <p class="credit"> &copy; Admin Panel 2024 | Team YumYum <span>Jom Makan </span> </p>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="../js/script.js"></script>
+
 
 </body>
 </html>
